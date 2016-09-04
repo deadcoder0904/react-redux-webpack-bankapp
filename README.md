@@ -1,6 +1,6 @@
 # react-redux-webpack-bankapp
 
-# IMAGES
+# VISUAL DESCRIPTION OF REDUX BANK
 
 # _CURRENT BALANCE : ₹ 0_
 
