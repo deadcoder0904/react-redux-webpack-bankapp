@@ -8,8 +8,6 @@ const mapStateToProps = (state) => ({
 	balance: state.balance
 });
 
-// console.log(typeof actionCreators.deposit(321));
-
 // MapDispatchToProps
 const mapDispatchToProps = (dispatch) => ({
 	depositAmount: (amount) => dispatch(actionCreators.deposit(amount)),

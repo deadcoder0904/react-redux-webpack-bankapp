@@ -5,20 +5,9 @@ import { deposit, withdraw} from '../../test/helpers'
 const allReducers = (state,action) => {
 	switch(action.type){
 		case CONSTANTS.WITHDRAW_MONEY:
-			if(parseInt(state.balance) >= parseInt(action.payload))
-					return {
-						balance: parseInt(state.balance) - parseInt(action.payload), 
-						error: false
-					};
-			return {
-				balance: parseInt(state.balance), 
-				error: true
-			};
+			return withdraw(state.balance,action);
 		case CONSTANTS.DEPOSIT_MONEY:
-			return {
-				balance: parseInt(state.balance) + parseInt(action.payload), 
-				error: false
-			};
+			return deposit(state.balance,action);
 		default:
 			return state;
 	}
