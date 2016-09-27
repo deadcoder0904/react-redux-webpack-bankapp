@@ -56,7 +56,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + '/dist/',
+    path: __dirname + '/public',
     filename: 'bundle.js'
   },
   plugins: [HTMLWebpackPluginConfig],
