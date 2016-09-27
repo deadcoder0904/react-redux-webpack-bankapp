@@ -4,16 +4,16 @@
 
 # _CURRENT BALANCE : ₹ 0_
 
-![Initial Balance - ₹ 0](http://imgur.com/YH0FM0O.png)
+![Initial Balance - ₹ 0](http://imgur.com/ySLTWQz.png)
 
 # _DEPOSIT MONEY : ₹ 500_
 
-![Balance - ₹ 500](http://imgur.com/iR4qRhg.png)
+![Balance - ₹ 500](http://imgur.com/SGRrdLZ.png)
 
 # _WITHDRAW MONEY : ₹ 300_
 
-![Balance - ₹ 200](http://imgur.com/v9k3Jyc.png)
+![Balance - ₹ 200](http://imgur.com/HV05uXx.png)
 
 # _WITHDRAW MONEY : ₹ 400_
 
-![Balance - ₹ 200](http://imgur.com/WO1Qr5m.png)
+![Balance - ₹ 200](http://imgur.com/vCktPfw.png)

@@ -51,12 +51,9 @@ module.exports = {
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url?limit=10000&mimetype=image/svg+xml'
-      }/*,
-      {
-        test: /\.sass$/,
-        loader: "style-loader!css-loader?sourceMap!sass-loader?sourceMap"
-      }*/
+      }
     ]
   },
-  plugins: [HTMLWebpackPluginConfig]
+  plugins: [HTMLWebpackPluginConfig],
+  devtool: 'inline-source-map'
 };
