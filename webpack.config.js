@@ -1,21 +1,22 @@
-var path = require("path");
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 
 var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-  template: path.join(__dirname,'/app/index.html'),
+  template: __dirname + '/app/index.html',
   filename: 'index.html',
   inject: 'body'
 });
 
 module.exports = {
   entry: [
-    './app/index.js',
-    'webpack-dev-server/client?http://localhost:8080'
+    './app/index.js'
   ],
-  devtool: "cheap-module-eval-source-map",
-  output: {
-    path: path.join(__dirname,'/dist/'),
-    filename: 'index_bundle.js'
+  resolve: {
+  root: __dirname,
+  alias: {
+    constants: 'app/constants/index',
+    style: 'app/style/index',
+  },
+  extensions: ['', '.js']
   },
   module: {
     loaders: [
@@ -53,6 +54,10 @@ module.exports = {
         loader: 'url?limit=10000&mimetype=image/svg+xml'
       }
     ]
+  },
+  output: {
+    path: __dirname + '/dist/',
+    filename: 'bundle.js'
   },
   plugins: [HTMLWebpackPluginConfig],
   devtool: 'inline-source-map'

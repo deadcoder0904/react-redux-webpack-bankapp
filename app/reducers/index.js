@@ -1,4 +1,4 @@
-import CONSTANTS from '../constants'
+import CONSTANTS from 'constants'
 import { deposit, withdraw} from '../../test/helpers'
 
 // Reducers

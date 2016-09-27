@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../style'
+import styles from 'style'
 import { connect } from 'react-redux'
 
 const mapStateToProps = (state) => ({
