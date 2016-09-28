@@ -1,3 +1,4 @@
+var webpack = require("webpack");
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 
 var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
@@ -57,8 +58,16 @@ module.exports = {
   },
   output: {
     path: __dirname + '/public',
-    filename: 'bundle.js'
+    filename: 'bundle.min.js'
   },
-  plugins: [HTMLWebpackPluginConfig],
+  plugins: [HTMLWebpackPluginConfig,
+            new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+            }),
+            new webpack.optimize.UglifyJsPlugin({
+              compress: { warnings: false },
+              minimize: true
+            })
+            ],
   devtool: 'inline-source-map'
 };

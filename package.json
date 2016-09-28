@@ -7,6 +7,7 @@
     "test": "mocha --compilers js:babel-core/register --recursive --require ./test/test_helper.js",
     "test:watch": "npm run test -- --watch",
     "production": "webpack -p",
+    "uglify": "npm run production && uglifyjs ./public/bundle.min.js -c -m -o ./public/bundle.min.js --source-map ./public/bundle.min.js.map",
     "start": "webpack-dev-server",
     "dev": "webpack-dev-server --progress --inline --hot"
   },
@@ -35,6 +36,7 @@
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0",
     "style-loader": "^0.13.1",
+    "uglify-js": "^2.7.3",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
