@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --recursive --require ./test/test_helper.js",
     "test:watch": "npm run test -- --watch",
-    "production": "webpack -p --define process.env.NODE_ENV='\"production\"'",
+    "production": "webpack -p",
     "uglify": "npm run production && uglifyjs ./public/bundle.min.js -c -m -o ./public/bundle.min.js --source-map ./public/bundle.min.js.map",
     "start": "webpack-dev-server",
     "dev": "webpack-dev-server --progress --inline --hot"
